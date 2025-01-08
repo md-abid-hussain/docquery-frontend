@@ -1,0 +1,21 @@
+{
+    "name": "Next.js Development Container",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-22-bookworm",
+    "forwardPorts": [3000],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-vscode.vscode-typescript-next"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "typescript.tsdk": "node_modules/typescript/lib"
+            }
+        }
+    },
+    "postCreateCommand": "npm install"
+}
